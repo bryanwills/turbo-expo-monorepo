@@ -1,0 +1,20 @@
+{
+  "name": "@acme/tailwind",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./postcss.config": "./postcss.config.mjs",
+    "./native": "./native.ts"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}
