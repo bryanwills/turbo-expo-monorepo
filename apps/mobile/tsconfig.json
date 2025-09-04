@@ -2,6 +2,9 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "skipLibCheck": true,
+    "types": [],
+    "noImplicitAny": false,
     "paths": {
       "@/*": [
         "./*"
@@ -19,5 +22,13 @@
     "tailwind.config.js",
     "babel.config.js",
     "nativewind-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx"
   ]
 }
